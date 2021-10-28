@@ -19,7 +19,7 @@ const Informations: React.FC = () => {
     <>
       <Box display='flex' justifyContent='center'>
         <Typography color="textSecondary">
-          御用の際はページ下部のメールよりお願いします
+          御用の際はページ下部のメールアドレスよりお願いします
         </Typography>
       </Box>
       <Box p={2}>
