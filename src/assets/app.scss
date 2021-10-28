@@ -16,7 +16,7 @@ ul {
     top: 0;
     left: 0;
     width: 100%;
-    height: 91%;
+    height: 160%;
     overflow: hidden;
     padding: 0px;
     li {
@@ -38,7 +38,7 @@ li:nth-child(1) {
 }
 
 li:nth-child(2) {
-   left: 10%;
+   right: 10%;
    width: 20px;
    height: 20px;
    animation-delay: 2s;
@@ -68,7 +68,7 @@ li:nth-child(5) {
 }
 
 li:nth-child(6) {
-   left: 10%;
+   right: 10%;
    width: 110px;
    height: 110px;
    animation-delay: 3s;
@@ -85,12 +85,12 @@ li:nth-child(8) {
    left: 50%;
    width: 25px;
    height: 25px;
-   animation-delay: 15s;
+   animation-delay: 2s;
    animation-duration: 45s;
 }
 
 li:nth-child(9) {
-   left: 20%;
+   right: 20%;
    width: 15px;
    height: 15px;
    animation-delay: 2s;
@@ -111,6 +111,47 @@ li:nth-child(11) {
    height: 20px;
    animation-delay: 7s;
 }
+
+li:nth-child(12) {
+   right: 90%;
+   width: 80px;
+   height: 80px;
+   animation-delay: 5s;
+}
+li:nth-child(13) {
+   right: 15%;
+   width: 40px;
+   height: 40px;
+   animation-delay: 4s;
+}
+li:nth-child(14) {
+   left: 20%;
+   width: 30px;
+   height: 30px;
+   animation-delay: 2s;
+}
+
+li:nth-child(15) {
+   left: 150%;
+   width: 80px;
+   height: 80px;
+   animation-delay: 0s;
+}
+
+li:nth-child(16) {
+   right: 50%;
+   width: 20px;
+   height: 20px;
+   animation-delay: 4s;
+}
+
+li:nth-child(17) {
+   left: 90%;
+   width: 60px;
+   height: 60px;
+   animation-delay: 42s;
+}
+
 @keyframes animate {
  0% {
    transform: translateY(0) rotate(0deg);
@@ -130,12 +171,6 @@ li:nth-child(11) {
      margin: 0px;
      height: 105%;
 
-    li:nth-child(6) {
-     display: none;
-   }
-    li:nth-child(7) {
-     display: none;
-   }
     li:nth-child(9) {
      width: 35px;
      height: 35px;

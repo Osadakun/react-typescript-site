@@ -61,6 +61,21 @@ const Informations: React.FC = () => {
           <Card className={classes.root}>
             <CardContent>
               <Typography variant="h6">
+                Job
+              </Typography>
+              <Typography color="textSecondary">
+                明光義塾(小中高校生：数英担当)/セカンドストリート(バイトリーダー)←過去
+              </Typography>
+              <Typography color="textSecondary">
+                株式会社BearTail (業務委託契約)←現在
+              </Typography>
+            </CardContent>
+          </Card>
+        </Box>
+        <Box display='flex' justifyContent='center' p={1} >
+          <Card className={classes.root}>
+            <CardContent>
+              <Typography variant="h6">
                 Interest
               </Typography>
               <Typography color="textSecondary">

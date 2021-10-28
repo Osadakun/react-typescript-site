@@ -2,19 +2,22 @@ import React from 'react'
 import "./assets/app.scss";
 import Contact from './components/Contact'
 import MyAvatar from './components/MyAvatar';
-import Navbar from './components/Navbar'
 import Informations from './components/Informations';
+import ScrollUp from './components/Scrollup';
 
 const Home: React.FC = () => {
   return (
     <>
       <header>
-        <p className="greet">Welcome to Mypage</p>
-        <section>
-          <Navbar />
-        </section>
+        <p className="greet">Welcome to Mypage!!</p>
       </header>
         <ul className="circles">
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
           <li></li>
           <li></li>
           <li></li>
@@ -30,12 +33,13 @@ const Home: React.FC = () => {
       <section>
         <MyAvatar />
       </section>
-      <section id='INFORMATIONS'>
+      <section id='informations'>
         <Informations />
       </section>
-      <section id='CONTACT'>
+      <section id='contact'>
         <Contact />
       </section>
+      <ScrollUp />
     </>
   );
 }
