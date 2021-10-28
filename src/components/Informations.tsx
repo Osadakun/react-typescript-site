@@ -17,6 +17,11 @@ const Informations: React.FC = () => {
 
   return (
     <>
+      <Box display='flex' justifyContent='center'>
+        <Typography color="textSecondary">
+          御用の際はページ下部のメールよりお願いします
+        </Typography>
+      </Box>
       <Box p={2}>
         <Box display='flex' justifyContent='center' p={1} >
             Informations
@@ -64,7 +69,7 @@ const Informations: React.FC = () => {
                 Job
               </Typography>
               <Typography color="textSecondary">
-                明光義塾(小中高校生：数英担当)/セカンドストリート(バイトリーダー)←過去
+                明光義塾(小中高校生：数英担当) / セカンドストリート(バイトリーダー)←過去
               </Typography>
               <Typography color="textSecondary">
                 株式会社BearTail (業務委託契約)←現在
@@ -91,7 +96,7 @@ const Informations: React.FC = () => {
                 Qualifications
               </Typography>
               <Typography color="textSecondary">
-                基本情報技術者(FE)
+                基本情報技術者(FE) / TOEIC(勉強中)
               </Typography>
             </CardContent>
           </Card>

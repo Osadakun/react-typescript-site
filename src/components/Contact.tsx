@@ -1,4 +1,5 @@
 import React from "react";
+import EmailIcon from '@material-ui/icons/Email';
 import "../assets/contact.scss";
 import InstagramIcon from "@material-ui/icons/Instagram"
 import GitHubIcon from "@material-ui/icons/GitHub";
@@ -9,6 +10,10 @@ function Footer() {
   return (
     <div className="footer">
       <p className="footItem">© 2021 Toshiki Ono</p>
+      <EmailIcon
+        className="icon footItem"
+        onClick={() => window.open("mailto:b1915053@planet.kanazawa-it.ac.jp", "_blank")}
+      />
       <GitHubIcon
         className="icon footItem"
         onClick={() => window.open("https://github.com/Osadakun", "_blank")}
