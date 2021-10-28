@@ -1,9 +1,43 @@
-import React from 'react';
+import React from 'react'
+import "./assets/app.scss";
+import Contact from './components/Contact'
+import MyAvatar from './components/MyAvatar';
+import Navbar from './components/Navbar'
+import Informations from './components/Informations';
 
-const App: React.FC = () => {
+const Home: React.FC = () => {
   return (
-    <h1>Hello React!</h1>
+    <>
+      <header>
+        <p className="greet">Welcome to Mypage</p>
+        <section>
+          <Navbar />
+        </section>
+      </header>
+        <ul className="circles">
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+      </ul>
+      <section>
+        <MyAvatar />
+      </section>
+      <section id='INFORMATIONS'>
+        <Informations />
+      </section>
+      <section id='CONTACT'>
+        <Contact />
+      </section>
+    </>
   );
 }
 
-export default App;
+export default Home;
