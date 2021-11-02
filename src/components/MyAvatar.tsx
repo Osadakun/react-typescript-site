@@ -36,14 +36,14 @@ const MyAvatar: React.FC = () => {
         <Box display='flex' justifyContent='center' p={2} >
           <Avatar
             alt='Toshiki Ono'
-            src={icon}
+            src={myphoto}
             className={classes.large}
           />
         </Box>
         <Box p={6} >
           <Avatar
             alt='Toshiki Ono'
-            src={myphoto}
+            src={icon}
             className={classes.small}
           />
         </Box>
