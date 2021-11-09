@@ -5,8 +5,8 @@ import { HamburgerIcon, Icon } from '@chakra-ui/icons';
 import { useDisclosure } from '@chakra-ui/hooks';
 import GitHubIcon from '@material-ui/icons/GitHub';
 import TwitterIcon from '@material-ui/icons/Twitter';
-import { useHistory } from 'react-router';
-// import { HeaderDrawer } from '../molecules/HeaderDrawer';
+import { useHistory } from 'react-router-dom';
+import { HeaderDrawer } from '../molecules/HeaderDrawer';
 
 export const Header: VFC = () => {
   const { onOpen, isOpen, onClose } = useDisclosure();
@@ -17,8 +17,8 @@ export const Header: VFC = () => {
     onClose();
   }, []);
 
-  const onClickSkills = useCallback(() => {
-    history.push('/skills');
+  const onClickInformations= useCallback(() => {
+    history.push('/informations');
     onClose();
   }, []);
 
@@ -83,7 +83,7 @@ export const Header: VFC = () => {
             <Text onClick={onClickHome}>HOME</Text>
           </Box>
           <Box pr={4} _hover={{ cursor: 'pointer', opacity: '0.7' }} fontSize='md'>
-            <Text onClick={onClickSkills}>SKILLS</Text>
+            <Text onClick={onClickInformations}>SKILLS</Text>
           </Box>
           <Box pr={4} _hover={{ cursor: 'pointer', opacity: '0.7' }} fontSize='md'>
             <Text onClick={onClickWorks}>WORKS</Text>
@@ -106,7 +106,7 @@ export const Header: VFC = () => {
         onClose={onClose}
         isOpen={isOpen}
         onClickHome={onClickHome}
-        onClickSkills={onClickSkills}
+        onClickInformations={onClickInformations}
         onClickWorks={onClickWorks}
         onClickContact={onClickContact}
       />
