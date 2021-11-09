@@ -5,7 +5,7 @@ import { HamburgerIcon, Icon } from '@chakra-ui/icons';
 import { useDisclosure } from '@chakra-ui/hooks';
 import GitHubIcon from '@material-ui/icons/GitHub';
 import TwitterIcon from '@material-ui/icons/Twitter';
-import { useHistory } from 'react-router-dom';
+import { useHistory } from 'react-router';
 // import { HeaderDrawer } from '../molecules/HeaderDrawer';
 
 export const Header: VFC = () => {
