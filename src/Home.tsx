@@ -3,9 +3,9 @@ import { Router } from "./router/Router";
 import { ChakraProvider } from "@chakra-ui/react";
 import { BrowserRouter } from "react-router-dom";
 import { Header } from "./components/organism/Header";
-import "./App.css";
+import "./home.css";
 
-function App() {
+function Home() {
   return (
     <ChakraProvider>
       <BrowserRouter>
@@ -15,4 +15,4 @@ function App() {
   );
 }
 
-export default App;
+export default Home;
