@@ -12,8 +12,6 @@ import InstagramIcon from "@material-ui/icons/Instagram"
 import GitHubIcon from "@material-ui/icons/GitHub";
 import TwitterIcon from "@material-ui/icons/Twitter";
 import { Button } from "@chakra-ui/button";
-import { Link } from "@chakra-ui/layout";
-import { ExternalLinkIcon } from "@chakra-ui/icons";
 
 type Props = {
   onClose: () => void;
@@ -25,7 +23,7 @@ type Props = {
 };
 
 export const HeaderDrawer: VFC<Props> = (props) => {
-  const { onClose, isOpen, onClickHome, onClickSkills, onClickWorks, onClickContact } = props;
+  const { onClose, isOpen, onClickHome, onClickSkills, onClickWorks } = props;
 
   return (
     <Drawer placement="right" size="xs" onClose={onClose} isOpen={isOpen}>
