@@ -5,7 +5,7 @@ import MyAvatar from './components/MyAvatar';
 import Informations from './components/Informations';
 import ScrollUp from './components/Scrollup';
 
-const Home: React.FC = () => {
+const App: React.FC = () => {
   return (
     <>
       <header>
@@ -44,4 +44,4 @@ const Home: React.FC = () => {
   );
 }
 
-export default Home;
+export default App;
