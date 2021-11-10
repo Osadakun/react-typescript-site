@@ -1,11 +1,9 @@
 import React, { VFC } from "react";
-import { Route, Switch } from "react-router";
-import { Contact } from "../components/pages/Contact";
-import { Home } from "../components/pages/Home";
-import { Page404 } from "../components/pages/Page404";
-import { Works } from "../components/pages/Works";
-import { Skills } from "../components/pages/Skills";
-import { HeaderLayout } from "../components/templates/HeaderLayout";
+import { Route, Switch } from "react-router-dom";
+import { Home } from "../Home";
+import { Page404 } from "./Page404";
+import { Works } from "./Works";
+import { HeaderLayout } from "./HeaderLayout";
 
 export const Router: VFC = () => {
   return (
