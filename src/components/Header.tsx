@@ -121,13 +121,10 @@ export const Header: VFC = () => {
             <Text onClick={onClickHome}>HOME</Text>
           </Box>
           <Box pr={4} _hover={{ cursor: 'pointer', opacity: '0.7' }} fontSize='md'>
-            <Text onClick={onClickInformations}>SKILLS</Text>
+            <Text onClick={onClickInformations}>INFROMATIONS</Text>
           </Box>
           <Box pr={4} _hover={{ cursor: 'pointer', opacity: '0.7' }} fontSize='md'>
             <Text onClick={onClickWorks}>WORKS</Text>
-          </Box>
-          <Box pr={4} _hover={{ cursor: 'pointer', opacity: '0.7' }} fontSize='md'>
-            <Text onClick={onClickContact}>CONTACT</Text>
           </Box>
         </Flex>
         <IconButton
