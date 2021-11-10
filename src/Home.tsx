@@ -1,8 +1,8 @@
 import React from 'react';
-import { Router } from './router/Router';
+import { Router } from './components/Router';
 import { ChakraProvider } from '@chakra-ui/react';
 import { BrowserRouter } from 'react-router-dom';
-import { Header } from './components/organism/Header';
+import { Header } from './components/Header';
 import './home.css';
 
 function Home() {

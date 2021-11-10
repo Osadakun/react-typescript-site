@@ -3,10 +3,12 @@ import { Box, Flex, Heading, Link, Text } from '@chakra-ui/layout';
 import { IconButton } from '@chakra-ui/button';
 import { HamburgerIcon, Icon } from '@chakra-ui/icons';
 import { useDisclosure } from '@chakra-ui/hooks';
+import EmailIcon from '@material-ui/icons/Email';
 import GitHubIcon from '@material-ui/icons/GitHub';
+import InstagramIcon from "@material-ui/icons/Instagram"
 import TwitterIcon from '@material-ui/icons/Twitter';
 import { useHistory } from 'react-router-dom';
-import { HeaderDrawer } from '../molecules/HeaderDrawer';
+import { HeaderDrawer } from './HeaderDrawer';
 
 export const Header: VFC = () => {
   const { onOpen, isOpen, onClose } = useDisclosure();

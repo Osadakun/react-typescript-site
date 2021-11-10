@@ -17,13 +17,13 @@ type Props = {
   onClose: () => void;
   isOpen: boolean;
   onClickHome: () => void;
-  onClickSkills: () => void;
+  onClickInformations: () => void;
   onClickWorks: () => void;
   onClickContact: () => void;
 };
 
 export const HeaderDrawer: VFC<Props> = (props) => {
-  const { onClose, isOpen, onClickHome, onClickSkills, onClickWorks } = props;
+  const { onClose, isOpen, onClickInformations, onClickHome, onClickWorks } = props;
 
   return (
     <Drawer placement='right' size='xs' onClose={onClose} isOpen={isOpen}>
@@ -35,7 +35,7 @@ export const HeaderDrawer: VFC<Props> = (props) => {
             <Button w='100%' onClick={onClickHome}>
               HOME
             </Button>
-            <Button w='100%' onClick={onClickSkills}>
+            <Button w='100%' onClick={onClickInformations}>
               INFORMATIONS
             </Button>
             <Button w='100%' onClick={onClickWorks}>
