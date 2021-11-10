@@ -1,78 +1,78 @@
-import React, { useCallback, VFC } from 'react';
-import { Box, Flex, Heading, Link, Text } from '@chakra-ui/layout';
-import { IconButton } from '@chakra-ui/button';
-import { HamburgerIcon, Icon } from '@chakra-ui/icons';
-import { useDisclosure } from '@chakra-ui/hooks';
-import EmailIcon from '@material-ui/icons/Email';
-import GitHubIcon from '@material-ui/icons/GitHub';
+import React, { useCallback, VFC } from "react";
+import { Box, Flex, Heading, Link, Text } from "@chakra-ui/layout";
+import { IconButton } from "@chakra-ui/button";
+import { HamburgerIcon, Icon } from "@chakra-ui/icons";
+import { useDisclosure } from "@chakra-ui/hooks";
+import EmailIcon from "@material-ui/icons/Email";
+import GitHubIcon from "@material-ui/icons/GitHub";
 import InstagramIcon from "@material-ui/icons/Instagram"
 import LibraryBooksOutlinedIcon from "@material-ui/icons/LibraryBooksOutlined";
-import TwitterIcon from '@material-ui/icons/Twitter';
-import { useHistory } from 'react-router-dom';
-import { HeaderDrawer } from './HeaderDrawer';
+import TwitterIcon from "@material-ui/icons/Twitter";
+import { useHistory } from "react-router-dom";
+import { HeaderDrawer } from "./HeaderDrawer";
 
 export const Header: VFC = () => {
   const { onOpen, isOpen, onClose } = useDisclosure();
   const history = useHistory();
 
   const onClickHome = useCallback(() => {
-    history.push('/');
+    history.push("/");
     onClose();
   }, []);
 
   const onClickInformations= useCallback(() => {
-    history.push('/informations');
+    history.push("/informations");
     onClose();
   }, []);
 
   const onClickWorks = useCallback(() => {
-    history.push('/works');
+    history.push("/works");
     onClose();
   }, []);
 
   const onClickContact = useCallback(() => {
-    history.push('/contact');
+    history.push("/contact");
     onClose();
   }, []);
 
   return (
     <>
       <Flex
-        as='nav'
-        bg='teal.400'
-        color='gray.50'
-        align='center'
-        justify='space-between'
+        as="nav"
+        bg="teal.400"
+        color="gray.50"
+        align="center"
+        justify="space-between"
         padding={{ base: 3, md: 4 }}
-        boxShadow='xl'
-        position='fixed'
-        w='100%'
+        boxShadow="xl"
+        position="fixed"
+        w="100%"
       >
-        <Flex as='a' _hover={{ cursor: 'pointer', opacity: '0.9' }} ml={10} onClick={onClickHome}>
-          <Heading as='h1' fontSize={{ base: 'xl', md: 25 }}>
+        <Flex as="a" _hover={{ cursor: "pointer", opacity: "0.9" }} ml={10} onClick={onClickHome}>
+          <Heading as="h1" fontSize={{ base: "xl", md: 25 }}>
             PORTFOLIO
           </Heading>
         </Flex>
-        <Flex align='center' fontSize={{ base: 20, md: 25 }} display={{ base: 'none', md: 'flex' }} mr={10}>
+        <Flex align="center" fontSize={{ base: 20, md: 25 }} display={{ base: "none", md: "flex" }} mr={10}>
           <Link
             w={12}
             h={12}
-            cursor='pointer'
-            href='https://github.com/Osadakun'
+            cursor="pointer"
+            href="https://github.com/Osadakun"
             isExternal
-            _hover={{ opacity: '0.8' }}
-            _focus={{ outline: 'none' }}
+            _hover={{ opacity: "0.8" }}
+            _focus={{ outline: "none" }}
           >
             <Icon as={GitHubIcon} />
           </Link>
           <Link
             w={12}
             h={12}
-            cursor='pointer'
-            href='https://www.instagram.com/pstone_79'
+            cursor="pointer"
+            href="https://www.instagram.com/pstone_79"
             isExternal
-            _hover={{ opacity: '0.8' }}
-            _focus={{ outline: 'none' }}
+            _hover={{ opacity: "0.8" }}
+            _focus={{ outline: "none" }}
           >
             <Icon as={InstagramIcon} />
           </Link>
@@ -80,11 +80,11 @@ export const Header: VFC = () => {
             pr={4}
             w={12}
             h={12}
-            cursor='pointer'
-            href='https://twitter.com/pstone_000'
+            cursor="pointer"
+            href="https://twitter.com/pstone_000"
             isExternal
-            _hover={{ opacity: '0.8' }}
-            _focus={{ outline: 'none' }}
+            _hover={{ opacity: "0.8" }}
+            _focus={{ outline: "none" }}
           >
             <Icon as={TwitterIcon} />
           </Link>
@@ -92,11 +92,11 @@ export const Header: VFC = () => {
             pr={4}
             w={12}
             h={12}
-            cursor='pointer'
-            href='mailto:b1915053@planet.kanazawa-it.ac.jp'
+            cursor="pointer"
+            href="mailto:b1915053@planet.kanazawa-it.ac.jp"
             isExternal
-            _hover={{ opacity: '0.8' }}
-            _focus={{ outline: 'none' }}
+            _hover={{ opacity: "0.8" }}
+            _focus={{ outline: "none" }}
           >
             <Icon as={EmailIcon} />
           </Link>
@@ -104,35 +104,35 @@ export const Header: VFC = () => {
             pr={4}
             w={12}
             h={12}
-            cursor='pointer'
-            href='https://hackmd.io/@Teon'
+            cursor="pointer"
+            href="https://hackmd.io/@Teon"
             isExternal
-            _hover={{ opacity: '0.8' }}
-            _focus={{ outline: 'none' }}
+            _hover={{ opacity: "0.8" }}
+            _focus={{ outline: "none" }}
           >
             <Icon as={LibraryBooksOutlinedIcon} />
           </Link>
           <Box
             pr={4}
-            _hover={{ cursor: 'pointer', opacity: '0.7' }}
-            _focus={{ outline: 'none' }}
-            fontSize='md'
+            _hover={{ cursor: "pointer", opacity: "0.7" }}
+            _focus={{ outline: "none" }}
+            fontSize="md"
           >
             <Text onClick={onClickHome}>HOME</Text>
           </Box>
-          <Box pr={4} _hover={{ cursor: 'pointer', opacity: '0.7' }} fontSize='md'>
+          <Box pr={4} _hover={{ cursor: "pointer", opacity: "0.7" }} fontSize="md">
             <Text onClick={onClickInformations}>INFROMATIONS</Text>
           </Box>
-          <Box pr={4} _hover={{ cursor: 'pointer', opacity: '0.7' }} fontSize='md'>
+          <Box pr={4} _hover={{ cursor: "pointer", opacity: "0.7" }} fontSize="md">
             <Text onClick={onClickWorks}>WORKS</Text>
           </Box>
         </Flex>
         <IconButton
-          aria-label='メニューボタン'
+          aria-label="メニューボタン"
           icon={<HamburgerIcon />}
-          size='sm'
-          variant='outline'
-          display={{ base: 'block', md: 'none' }}
+          size="sm"
+          variant="outline"
+          display={{ base: "block", md: "none" }}
           onClick={onOpen}
         />
       </Flex>
