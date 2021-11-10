@@ -6,6 +6,7 @@ import { useDisclosure } from '@chakra-ui/hooks';
 import EmailIcon from '@material-ui/icons/Email';
 import GitHubIcon from '@material-ui/icons/GitHub';
 import InstagramIcon from "@material-ui/icons/Instagram"
+import LibraryBooksOutlinedIcon from "@material-ui/icons/LibraryBooksOutlined";
 import TwitterIcon from '@material-ui/icons/Twitter';
 import { useHistory } from 'react-router-dom';
 import { HeaderDrawer } from './HeaderDrawer';
@@ -57,7 +58,7 @@ export const Header: VFC = () => {
             w={12}
             h={12}
             cursor='pointer'
-            href='https://github.com/raorao1011'
+            href='https://github.com/Osadakun'
             isExternal
             _hover={{ opacity: '0.8' }}
             _focus={{ outline: 'none' }}
@@ -65,16 +66,51 @@ export const Header: VFC = () => {
             <Icon as={GitHubIcon} />
           </Link>
           <Link
+            w={12}
+            h={12}
+            cursor='pointer'
+            href='https://www.instagram.com/pstone_79'
+            isExternal
+            _hover={{ opacity: '0.8' }}
+            _focus={{ outline: 'none' }}
+          >
+            <Icon as={InstagramIcon} />
+          </Link>
+          <Link
             pr={4}
             w={12}
             h={12}
             cursor='pointer'
-            href='https://twitter.com/mth_rao'
+            href='https://twitter.com/pstone_000'
             isExternal
             _hover={{ opacity: '0.8' }}
             _focus={{ outline: 'none' }}
           >
             <Icon as={TwitterIcon} />
+          </Link>
+          <Link
+            pr={4}
+            w={12}
+            h={12}
+            cursor='pointer'
+            href='mailto:b1915053@planet.kanazawa-it.ac.jp'
+            isExternal
+            _hover={{ opacity: '0.8' }}
+            _focus={{ outline: 'none' }}
+          >
+            <Icon as={EmailIcon} />
+          </Link>
+          <Link
+            pr={4}
+            w={12}
+            h={12}
+            cursor='pointer'
+            href='https://hackmd.io/@Teon'
+            isExternal
+            _hover={{ opacity: '0.8' }}
+            _focus={{ outline: 'none' }}
+          >
+            <Icon as={LibraryBooksOutlinedIcon} />
           </Link>
           <Box
             pr={4}
